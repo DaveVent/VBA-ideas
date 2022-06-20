@@ -53,6 +53,9 @@ Columns("A:D").Select
 With Selection
     .WrapText = False
 End With
+            
+    'OPZIONALE PER ELIMINARE LE RIGHE VUOTE
+'Columns("A:A").SpecialCells(xlCellTypeBlanks).EntireRow.Delete
     
 'Autosize delle colonne
 Columns("A:C").AutoFit
